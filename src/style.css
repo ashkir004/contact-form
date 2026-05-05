@@ -175,6 +175,11 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+input[type="radio"]:focus {
+    outline: 2px solid var(--green-600);
+    outline-offset: 2px;
+}
+
 input[type="radio"]:checked {
     border: none;
     background-image: url("$lib/assets/images/icon-radio-selected.svg");
@@ -210,7 +215,7 @@ textarea {
     font-weight: var(--w-bold);
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .active {
     background-color: var(--green-200);
     color: var(--green-600);
     cursor: pointer;
@@ -247,10 +252,11 @@ input[type="checkbox"]:checked{
   background-repeat: no-repeat;
   background-position: center;
   background-size: fill;
+  border: none;
 }
 
-input[type="checkbox"]:focus-visible {
-  outline: 2px solid #0C7D69;
+input[type="checkbox"]:focus-visible, .submit-btn:focus-visible {
+  outline: 2px solid var(--green-600);
   outline-offset: 2px;
 }
 

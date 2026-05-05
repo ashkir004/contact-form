@@ -2,6 +2,8 @@
 	import { enhance } from '$app/forms';
 
     let { form } = $props();
+
+    let submitted = $state(false);
 </script>
 
 
@@ -83,6 +85,9 @@
             <p class="field-error">{form?.errors?.fieldErrors?.consent}</p>
         </div>
 
-        <button type="submit" class="submit-btn">Submit</button>
+        <button type="submit" class="submit-btn {!form?.errors && submitted ? 'active' : ''}" 
+            onclick={() => submitted = true}>
+            Submit
+        </button>
     </form>
 </main>
