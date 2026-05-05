@@ -1,42 +1,45 @@
-# sv
+# Contact Form
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A minimal contact form built with Svelte + Vite + TypeScript for a Frontend Mentor challenge.
 
-## Creating a project
+Live demo
+- https://contact-form-ashkir004.netlify.app/
 
-If you're seeing this, you've probably already done this step. Congrats!
+Features
+- Simple responsive form UI
+- Client-side validation using `zod`
+- TypeScript + SvelteKit tooling
 
-```sh
-# create a new project
-npx sv create my-app
-```
+Tech stack
+- Svelte
+- Vite
+- TypeScript
+- zod (validation)
 
-To recreate this project with the same configuration:
+Setup
+1. Install dependencies:
 
-```sh
-# recreate this project
-npx sv@0.15.1 create --template minimal --types ts --add prettier eslint --install npm .
-```
+```bash
+npm install
+````
 
-## Developing
+2. Run the dev server:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Build & preview
 
-To create a production version of your app:
-
-```sh
+```bash
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+Lint & format
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run lint
+npm run format
+```
+
