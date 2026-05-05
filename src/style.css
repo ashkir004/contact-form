@@ -327,6 +327,6 @@ input[type="checkbox"]:focus-visible, .submit-btn:focus-visible {
 
 @media (min-width: 64rem) {
     form {
-        flex-grow: unset;
+        min-width: 48rem;
     }
 }
